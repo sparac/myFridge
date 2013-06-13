@@ -1,0 +1,17 @@
+myFridge
+================================
+
+MyFridge is a food tracking system consisting of an Android client application and a remote Jetty server with a MySQL database. It uses Google's ZXing API to initiate barcode scans and search the barcode on the http://online.konzum.hr/ site. It parses food details from HTML source code and returns the details to user, while persisting parsed object in db for future reference.
+
+The system provides basic data model CRUD functionality:
+Food: retrieve
+User: create, retrieve, update, delete 
+UserFood: create, retrieve, update, delete
+
+Tested on:
+Huawei Vision (API 2.3.7)
+HTC Desire (API 2.3.7)
+LG Optimus L7 P700 (API 4.0.1)
+
+Known issues:
+LG: Invisible error text during input validation.
