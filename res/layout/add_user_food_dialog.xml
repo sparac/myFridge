@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <DatePicker
+        android:id="@+id/pckExpiryDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pckExpiryDatePicker"
+        android:layout_alignRight="@+id/pckExpiryDatePicker"
+     	android:layout_marginLeft="5dp"
+        android:layout_below="@+id/pckExpiryDatePicker"
+        android:text="@string/validAfterDays"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtValidAfterDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignLeft="@+id/pckExpiryDatePicker"
+        android:layout_alignRight="@+id/pckExpiryDatePicker"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

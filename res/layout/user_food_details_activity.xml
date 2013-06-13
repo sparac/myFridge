@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayoutView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgFoodLarge"
+                    android:background="#000000"
+                    android:padding="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/emptyDesc" />
+
+                <TextView
+                    android:id="@+id/txtFoodName"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="200dp"
+                    android:maxLines="5"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/imgFoodLarge"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/emptyHint"
+                    android:textStyle="bold"
+                    android:ellipsize="end"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodManufacturer"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtManufacturer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:background="@android:color/transparent"
+                android:hint="@string/emptyHint" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodDescription"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emptyHint"
+                android:maxLength="900"
+                android:singleLine="false"
+                android:text="@string/notAvailable" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expiryDate"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emptyHint"
+                android:maxLength="20"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/validAfterDays"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtValidAfterDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emptyHint"
+                android:maxLength="20"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/openedDate"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtOpenedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emptyHint"
+                android:text="@string/notAvailable" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnModifyUserFood"
+            android:background="@drawable/button_selector_grey_custom" android:textStyle="bold" android:textColor="#202020"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+		    android:layout_marginRight="2dp"
+		    android:layout_marginBottom="3dp"
+            android:text="@string/modifyUserFood" />
+
+        <Button
+            android:id="@+id/btnCloneUserFood"
+            android:background="@drawable/button_selector_grey_custom" android:textStyle="bold" android:textColor="#202020"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+		    android:layout_marginRight="3dp"
+		    android:layout_marginBottom="3dp"
+            android:text="@string/cloneItem" />
+    </LinearLayout>
+
+</LinearLayout>

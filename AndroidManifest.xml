@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.fer.ztel.myFridge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kitchen_fridge_icon_resized_v2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.MainMenuActivity"
+            android:label="@string/MainMenuTitle" >
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.CreateAccountActivity"
+            android:label="@string/createAccountTitle" >
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.UserFoodListActivity"
+            android:label="@string/itemListTitle" >
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.ScannedFoodDetailsActivity"
+            android:label="@string/itemDetailsTitle" >
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.ModifyUserActivity"
+            android:label="@string/modifyDataTitle" >
+        </activity>
+        <activity
+            android:name="hr.fer.ztel.myFridge.client.activities.UserFoodDetailsActivity"
+            android:label="@string/userFoodDetailsTitle" >
+        </activity>
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+</manifest>
